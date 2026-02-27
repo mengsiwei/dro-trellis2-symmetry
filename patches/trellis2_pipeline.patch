@@ -1,0 +1,12 @@
+235c235
+<         return coords
+---
+>         return coords, z_s
+542c542
+<         coords = self.sample_sparse_structure(
+---
+>         coords, sparse_x0 = self.sample_sparse_structure(
+593c593
+<             return out_mesh, (shape_slat, tex_slat, res)
+---
+>             return out_mesh, cond_512, sparse_x0, (shape_slat, tex_slat, res)
